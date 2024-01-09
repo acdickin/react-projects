@@ -4,6 +4,7 @@ import './index.css'
 import App from './App.tsx'
 import Home from './Home.tsx'
 import Search from './SynonymsSearch/SynonymsSearch'
+import Post from './Posts/DisplayPosts'
 import MemoryBoard from './MemoryBoard/MemoryBoard'
 import Todo from './Todo/Todo'
 import {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "/synonyms",
         element: <Search />,
+      },
+      {
+        path: "/post",
+        element: <Post />,
       },
       {
         path: "/memory-game",

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import fetchSynonyms from "./fetchSynonyms";
+import fetchSynonyms from "../fetchSynonyms";
 export type Synonym={
   word:string;
   score:number;

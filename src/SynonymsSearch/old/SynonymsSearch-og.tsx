@@ -1,22 +1,20 @@
 import { useState } from 'react';
-import {Synonym } from './old/useGetSynonyms';
+import { useGetSynonyms,Synonym } from './useGetSynonyms';
 import './search.css'
-import Header from '../Header';
-import fetchSynonyms from './fetchSynonyms';
-import { useQuery } from "react-query";
+import Header from '../../Header';
 
 function SynonymsSearch() {
   const [word, setWord]= useState<string>('');
-  const { data, isLoading } = useQuery(["synonyms", word], ()=>fetchSynonyms(word));
+  const {isLoading,synonyms,getSynonyms} = useGetSynonyms();
 
   const handleFetchSynonyms =(e:React.FormEvent)=>{
     e.preventDefault();
-    fetchSynonyms(word)
+    getSynonyms(word)
   }
   
   const handleSynonymsClick=(newWord:string)=>{
     setWord(newWord);
-    fetchSynonyms(newWord);
+    getSynonyms(newWord);
   }
 
 const loader =()=><p>Loading ...</p>
@@ -29,7 +27,7 @@ const loader =()=><p>Loading ...</p>
             <th>Word Score</th>
           </tr>
           
-          {data.map((syn:Synonym)=>{
+          {synonyms.map((syn:Synonym)=>{
             return(
               
             <tr key={syn.word}>
@@ -63,7 +61,7 @@ const loader =()=><p>Loading ...</p>
       {
         isLoading
           ?loader()
-            : data.length>0 && synonymsTable()
+          :synonyms.length>0 && synonymsTable()
       }
     </div>
     </>

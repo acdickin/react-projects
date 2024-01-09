@@ -1,8 +1,8 @@
-  const queryString:string= "https://api.datamuse.com/words/?rel_syn=";
-  
-  const fetchSynonyms = (newWord:string ) =>{
-    return fetch(queryString+newWord)
-    .then((response)=> response.json())
-    .catch(error=>console.log(error));
+import axios from "axios";
+
+  const queryString:String= "https://api.datamuse.com/words/?rel_syn=";
+  const fetchSynonyms = async (newWord:string) =>{
+    const { data }= await axios.get(queryString+newWord)
+    return data;
   }
   export default fetchSynonyms;
