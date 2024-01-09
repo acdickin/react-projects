@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import {Synonym } from './old/useGetSynonyms';
+import { Synonym } from './Synonym';
 import './search.css'
 import Header from '../Header';
 import fetchSynonyms from './fetchSynonyms';
@@ -7,7 +7,10 @@ import { useQuery } from "react-query";
 
 function SynonymsSearch() {
   const [word, setWord]= useState<string>('');
-  const { data, isLoading } = useQuery(["synonyms", word], ()=>fetchSynonyms(word));
+  const { data, isLoading } = useQuery(
+    ["synonyms", word], 
+    ()=>fetchSynonyms(word)
+    );
 
   const handleFetchSynonyms =(e:React.FormEvent)=>{
     e.preventDefault();

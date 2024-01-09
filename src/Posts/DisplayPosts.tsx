@@ -1,15 +1,11 @@
-import React from "react";
 import { useQuery } from "react-query";
 import axios from "axios";
+import { Post } from "./Post";
 
 const retrievePosts = async () => {
   const response = await axios.get("https://jsonplaceholder.typicode.com/posts");
   return response.data;
 };
-interface Post{
-  id:string,
-  title:string
-}
 
 const DisplayPosts = () => {
   const { data: posts, error, isLoading } = useQuery("postsData", retrievePosts);
