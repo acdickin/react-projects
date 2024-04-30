@@ -64,3 +64,22 @@
   display: flex;
   flex-direction: column;
 }
+
+.guess-me{
+  width:500px;
+  height:500px;
+}
+
+.button-list{
+  display: flex;
+  justify-content: space-between;
+}
+.wrong {
+  color: red;
+  font-size: medium;
+}
+
+.correct {
+  color: green;
+  font-size: medium;
+}
