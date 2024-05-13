@@ -1,6 +1,5 @@
 import { useQuery } from "react-query";
 import axios from "axios";
-import { Post } from "./Post";
 
 const retrievePosts = async () => {
   const response = await axios.get("https://jsonplaceholder.typicode.com/posts");
@@ -15,7 +14,7 @@ const DisplayPosts = () => {
 
   return (
     <ul>
-      {posts.map(({ id, title }: Post) => (
+      {posts.map(({ id, title }) => (
         <li key={id}>{title}</li>
       ))}
     </ul>

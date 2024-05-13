@@ -1,6 +1,5 @@
 import './App.css'
 
-
 import { Outlet } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from 'react-query'
 import Layout from './layout/Layout'

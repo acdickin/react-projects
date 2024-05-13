@@ -5,8 +5,8 @@ import { Post } from "./Post";
 
 
 const CreatePost = () => {
-  const [title, setTitle] = useState<String>("");
-  const [body, setBody] = useState<String>("");
+  const [title, setTitle] = useState("");
+  const [body, setBody] = useState("");
 
   const mutation = useMutation((newPost) => axios.post("https://jsonplaceholder.typicode.com/posts", newPost));
 

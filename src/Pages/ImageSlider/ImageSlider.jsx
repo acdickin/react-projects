@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import { useState, useRef } from 'react'
 const TIMEOUT = 500;
 import space1 from '../../assets/space1.webp'
 import space2 from '../../assets/space2.webp'
