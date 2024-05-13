@@ -1,14 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import App from './App.tsx'
-import Home from './Home.tsx'
-import Search from './Pages/SynonymsSearch/SynonymsSearch.tsx'
-import Post from './Pages/Posts/DisplayPosts.tsx'
-import Guess from './Pages/ColorGuesser/Guess.tsx'
-import MemoryBoard from './Pages/MemoryBoard/MemoryBoard.tsx'
-import Todo from './Pages/Todo/Todo.tsx'
-import ImageSlider from './Pages/ImageSlider/ImageSlider.tsx'
+import App from './App'
+import Home from './Home'
+import Search from './Pages/SynonymsSearch/SynonymsSearch'
+import Post from './Pages/Posts/DisplayPosts'
+import Guess from './Pages/ColorGuesser/Guess'
+import MemoryBoard from './Pages/MemoryBoard/MemoryBoard'
+import Todo from './Pages/Todo/Todo'
+import ImageSlider from './Pages/ImageSlider/ImageSlider'
 import {
   createBrowserRouter,
   RouterProvider,

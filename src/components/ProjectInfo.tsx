@@ -1,6 +1,8 @@
 import { NavLink } from 'react-router-dom'
 import '../App.css'
-const ProjectInfo = ({ project }) => {
+
+
+const ProjectInfo = ({ project }: any) => {
 
     const { name, title, description, link, image } = project
 

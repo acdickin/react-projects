@@ -12,8 +12,8 @@ const SLIDES = [
   space4
 ]
 
-const Controls = ({ slideIndex, setSlide }) => {
-  const interval = useRef()
+const Controls = ({ slideIndex, setSlide }: any) => {
+  const interval = useRef<any>()
 
   const incrementSlide = () => {
     const newIndex = slideIndex + 1
@@ -45,7 +45,7 @@ const Controls = ({ slideIndex, setSlide }) => {
   )
 }
 
-const Slide = ({ slideNum }) => <img src={SLIDES[slideNum]} style={{ height: '70%', width: '70%' }} />
+const Slide = ({ slideNum }: any) => <img src={SLIDES[slideNum]} style={{ height: '70%', width: '70%' }} />
 
 const ImageSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0)

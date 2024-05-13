@@ -8,7 +8,7 @@ const Todo = () => {
   const [todoList, setTodoList] = useState<Task[]>([]);
   const [task, setTask] = useState<string>('');
 
-  const addTask = (e) => {
+  const addTask = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("call addTask")
     setTodoList((prev: Task[]) => {
@@ -24,11 +24,11 @@ const Todo = () => {
     e.preventDefault();
     setTask(e.target.value);
   }
-  const removeTask = (id: number) => {
-    console.log("call removeTask")
-    const filteredTask = todoList.filter(currentTask => currentTask.id !== id);
-    setTodoList(filteredTask);
-  }
+  // const removeTask = (id: number) => {
+  //   console.log("call removeTask")
+  //   const filteredTask = todoList.filter(currentTask => currentTask.id !== id);
+  //   setTodoList(filteredTask);
+  // }
 
   const renderTasks = (task: Task) => {
     return (

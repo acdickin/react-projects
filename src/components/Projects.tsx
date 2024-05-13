@@ -23,22 +23,3 @@ const Projects = () => {
 }
 
 export default Projects
-
-{/* <div className="project-card">
-<label className="label" htmlFor="memory-name">Memory Game</label>
-<NavLink to='/memory-game'>
-    <img className='project' src={memoryGame} />
-</NavLink>
-</div> */}
-
-{/* <div className="project-card">
-              <label className="label" htmlFor="-">Color Guesser</label>
-              <NavLink to='/color-guesser'>
-      
-              </NavLink>
-            </div>
-            <div className="project-card">
-              <label className="label" htmlFor="-">Color Guesser</label>
-              <NavLink to='/image-slider'>
-              </NavLink>
-            </div> */}

@@ -14,7 +14,7 @@ const DisplayPosts = () => {
 
   return (
     <ul>
-      {posts.map(({ id, title }) => (
+      {posts.map(({ id, title }: any) => (
         <li key={id}>{title}</li>
       ))}
     </ul>

@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { useMutation } from "react-query";
 import axios from "axios";
-import { Post } from "./Post";
 
-
+// @ts-nocheck
 const CreatePost = () => {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
@@ -11,6 +10,7 @@ const CreatePost = () => {
   const mutation = useMutation((newPost) => axios.post("https://jsonplaceholder.typicode.com/posts", newPost));
 
   const submitData = () => {
+    // @ts-ignore
     mutation.mutate({ title, body });
   };
 
@@ -19,6 +19,7 @@ const CreatePost = () => {
   }
 
   if (mutation.isError) {
+    // @ts-ignore
     return <span>Error: {mutation.error.message}</span>;
   }
 
@@ -34,3 +35,4 @@ const CreatePost = () => {
     </div>
   );
 };
+export default CreatePost;
