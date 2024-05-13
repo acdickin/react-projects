@@ -8,7 +8,6 @@ import Post from './Pages/Posts/DisplayPosts'
 import Guess from './Pages/ColorGuesser/Guess'
 import MemoryBoard from './Pages/MemoryBoard/MemoryBoard'
 import Todo from './Pages/Todo/Todo'
-import ImageSlider from './Pages/ImageSlider/ImageSlider'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -36,10 +35,6 @@ const router = createBrowserRouter([
       {
         path: "/todo",
         element: <Todo />,
-      },
-      {
-        path: "/image-slider",
-        element: <ImageSlider />,
       },
       {
         path: "/color-guesser",

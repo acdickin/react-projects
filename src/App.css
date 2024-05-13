@@ -34,7 +34,10 @@ body {
     flex-direction: column;
     margin: 0 auto;
   }
+}
 
+.social-img {
+  width: 40px;
 }
 
 .sticky {
@@ -44,12 +47,19 @@ body {
 }
 
 .header {
+  margin-top: 10px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.logo {
+.socials {
+  width: 400px;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.social-img .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
@@ -113,7 +123,7 @@ body {
 .project-card {
   display: flex;
   justify-content: space-around;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .guess-me {

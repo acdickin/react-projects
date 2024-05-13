@@ -7,7 +7,7 @@ const ProjectInfo = ({ project }: any) => {
     const { name, title, description, link, image } = project
 
     return (
-        <div className={"project-card"}>
+        <div className="project-card">
             <div className="center-align" >
                 <label className="label" htmlFor={name}>{title}</label>
                 <p className="description">{description}</p>

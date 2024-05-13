@@ -4,6 +4,7 @@ import { Outlet } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from 'react-query'
 import Layout from './layout/Layout'
 
+
 function App() {
 
   const clientQuery = new QueryClient
