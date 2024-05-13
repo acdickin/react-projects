@@ -4,9 +4,10 @@
   padding: "20px";
   background-color: "#fff";
   border-radius: "8px";
-  box-shadow:"0 0 10px rgba(0, 0, 0, 0.1)"
+  box-shadow: "0 0 10px rgba(0, 0, 0, 0.1)"
 }
-.header{
+
+.header {
   background-color: #3498db;
   color: #fff;
   padding: 20px;

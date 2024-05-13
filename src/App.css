@@ -1,8 +1,52 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+}
+
+body {
+  display: block;
+}
+
+
+
+.heroBanner-image {
+  height: 400px;
+  width: 400px;
+  padding: 40px 0 0 0;
+  margin: 0 auto;
+}
+
+#heroImage {
+  background-image: url('./assets/nebula-wallpaper.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 40% 5%;
+}
+
+.heroBanner {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1280px) {
+  .heroBanner {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .logo {
@@ -11,23 +55,20 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-.header{
-  position: fixed;
-  top: 0;
-  left: 0;
 }
 
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -46,34 +87,46 @@
 .read-the-docs {
   color: #888;
 }
-.project-list{
+
+.project-list {
   display: flex;
   flex-wrap: wrap;
 }
-.project{
-  width: auto;
-  height: 450px;
-  margin:20px;
+
+.project {
+  width: 350px;
+  height: 350px;
+  margin: 20px;
   border-radius: 20px;
-  border: thick solid ;
+  border: thick solid;
 }
-.project:hover{
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project:hover {
   border: thick solid #32a1ce;
 }
-.project-card{
+
+.project-card {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto;
 }
 
-.guess-me{
-  width:500px;
-  height:500px;
+.guess-me {
+  width: 500px;
+  height: 500px;
+  flex: auto;
 }
 
-.button-list{
+.button-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
+
 .wrong {
   color: red;
   font-size: medium;
@@ -82,4 +135,24 @@
 .correct {
   color: green;
   font-size: medium;
+}
+
+.center-align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+a {
+  color: #463E72
+}
+
+button {
+  background-color: #3B9BD6;
+  color: white
 }

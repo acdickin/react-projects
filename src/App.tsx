@@ -1,17 +1,19 @@
 import './App.css'
-import Header from './Header'
+
 
 import { Outlet } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from 'react-query'
+import Layout from './layout/Layout'
 
 function App() {
 
- const clientQuery = new QueryClient
+  const clientQuery = new QueryClient
   return (
-    <QueryClientProvider client ={clientQuery}> 
-      <Header/>
+    <QueryClientProvider client={clientQuery}>
       <main>
-        <Outlet/>
+        <Layout>
+          <Outlet />
+        </Layout>
       </main>
     </QueryClientProvider>
   )

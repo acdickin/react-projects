@@ -3,24 +3,23 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
 import Home from './Home.tsx'
-import Search from './SynonymsSearch/SynonymsSearch'
-import Post from './Posts/DisplayPosts'
-import Guess from './GuessColor/Guess'
-import MemoryBoard from './MemoryBoard/MemoryBoard'
-import Todo from './Todo/Todo'
-import ImageSlider from './ImageSlider/ImageSlider'
+import Search from './Pages/SynonymsSearch/SynonymsSearch.tsx'
+import Post from './Pages/Posts/DisplayPosts.tsx'
+import Guess from './Pages/ColorGuesser/Guess.tsx'
+import MemoryBoard from './Pages/MemoryBoard/MemoryBoard.tsx'
+import Todo from './Pages/Todo/Todo.tsx'
+import ImageSlider from './Pages/ImageSlider/ImageSlider.tsx'
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Tree from './Tree/Tree.tsx'
 const router = createBrowserRouter([
   {
     element: <App />,
     children: [
       {
-        path:"/",
-        element:<Home/>
+        path: "/",
+        element: <Home />
       },
       {
         path: "/synonyms",
@@ -39,13 +38,14 @@ const router = createBrowserRouter([
         element: <Todo />,
       },
       {
-        path: "/guess",
-        element: <Guess />,
-      },
-      {
-        path: "/slide",
+        path: "/image-slider",
         element: <ImageSlider />,
       },
+      {
+        path: "/color-guesser",
+        element: <Guess />
+      }
+
     ],
   },
 ]);
