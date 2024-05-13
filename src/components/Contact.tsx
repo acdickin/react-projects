@@ -3,7 +3,7 @@ import github from '../assets/GitHub.png'
 import resume from '../assets/AndrewCosmic-Resume.pdf'
 const Contact = () => {
     return (
-        <>
+        <div style={{ margin: '40px 0' }}>
             <h2>Contact Me</h2>
             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly' }}>
                 <a download={resume}>
@@ -19,7 +19,7 @@ const Contact = () => {
                 </a>
                 <br />
             </div>
-        </>
+        </div>
     )
 }
 
