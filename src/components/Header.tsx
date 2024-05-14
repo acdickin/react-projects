@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom"
 import "../App.css"
-import linkedin from '../assets/linkedin.webp'
+import linkedin from '../assets/linkedin.png'
 import { useLocation } from 'react-router-dom';
 const Header = () => {
   const { pathname } = useLocation();
