@@ -1,4 +1,3 @@
-import React from 'react'
 import exerciseBuddy from '../assets/gym.png'
 const Websites = () => {
     return (
