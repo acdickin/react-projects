@@ -1,6 +1,10 @@
 import { NavLink } from "react-router-dom"
 import "../App.css"
 import linkedin from '../assets/linkedin.png'
+import email from '../assets/email.png'
+import resumeImg from '../assets/resume.png'
+import resume from '../assets/AndrewCosmic-Resume.pdf'
+
 import { useLocation } from 'react-router-dom';
 const Header = () => {
   const { pathname } = useLocation();
@@ -14,7 +18,11 @@ const Header = () => {
       }
 
       <div className="socials">
-        <a href="https://www.linkedin.com/in/andrew-cosmic-a8bbb22a/">
+        <a href={resume}>
+          <img className="social-img" src={resumeImg} alt="resume" />
+        </a>
+        <a href="mailto: acdickin@gmail.com"> <img className="social-img" src={email} alt="linkedin" /></a>
+        <a href="https://www.linkedin.com/in/andrew-cosmic-a8bbb22a/" target="_blank">
           <img className="social-img" src={linkedin} alt="linkedin" />
         </a>
       </div>

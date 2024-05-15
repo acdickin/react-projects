@@ -38,6 +38,8 @@ body {
 
 .social-img {
   width: 40px;
+  background-color: white;
+  border-radius: 25px;
 }
 
 .sticky {
@@ -163,11 +165,10 @@ a {
 }
 
 button {
-  background-color: #3B9BD6;
+  background-image: linear-gradient(315deg, #463E72 0%, #3B9BD6 74%);
   color: white
 }
 
 .language-buttons {
   margin: 0 20px;
-  background-image: linear-gradient(315deg, #463E72 0%, #3B9BD6 74%);
 }
