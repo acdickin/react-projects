@@ -1,5 +1,4 @@
 import linkedin from '../assets/linkedin.png'
-import github from '../assets/GitHub.png'
 import resume from '../assets/AndrewCosmicResume.pdf'
 import email from '../assets/email.png'
 import resumeImg from '../assets/resume.png'
