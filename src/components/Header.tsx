@@ -3,7 +3,7 @@ import "../App.css"
 import linkedin from '../assets/linkedin.png'
 import email from '../assets/email.png'
 import resumeImg from '../assets/resume.png'
-import resume from '../assets/AndrewCosmic-Resume.pdf'
+import resume from '../assets/AndrewCosmicResume.pdf'
 
 import { useLocation } from 'react-router-dom';
 const Header = () => {
