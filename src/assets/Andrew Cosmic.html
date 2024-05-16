@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5173/ -->
+<html lang="en"><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+  <script type="module" src="./Andrew Cosmic_files/client"></script>
+
+  
+  <link rel="icon" type="image/png" href="http://localhost:5173/andrew.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrew Cosmic</title>
+<style type="text/css" data-vite-dev-id="E:/code/react-projects/src/index.css">:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  /* place-items: center; */
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: black;
+  background-color: #efefef;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}</style><style type="text/css" data-vite-dev-id="E:/code/react-projects/src/App.css">#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body {
+  display: block;
+}
+
+
+
+.heroBanner-image {
+  height: 400px;
+  width: 400px;
+  padding: 40px 0 0 0;
+  margin: 0 auto;
+}
+
+#heroImage {
+  background-image: url('/src/assets/nebula-wallpaper.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 40% 5%;
+}
+
+.heroBanner {
+  display: flex;
+  justify-content: 'space-evenly';
+}
+
+@media screen and (max-width: 1280px) {
+  .heroBanner {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+
+.social-img {
+  width: 40px;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.header {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.socials {
+  width: 400px;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.social-img .logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  width: 350px;
+  height: 350px;
+  margin: 20px;
+  border-radius: 20px;
+  border: thick solid;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project:hover {
+  border: thick solid #32a1ce;
+}
+
+.project-card {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px auto;
+}
+
+.guess-me {
+  width: 500px;
+  height: 500px;
+  flex: auto;
+}
+
+.button-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.wrong {
+  color: red;
+  font-size: medium;
+}
+
+.correct {
+  color: green;
+  font-size: medium;
+}
+
+.center-align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+a {
+  color: #463E72
+}
+
+button {
+  background-image: linear-gradient(315deg, #463E72 0%, #3B9BD6 74%);
+  color: white
+}
+
+.language-buttons {
+  margin: 0 20px;
+}
+
+#journey-img {
+  width: 200px
+}
+
+@media screen and (max-width: 1280px) {
+  .journey-img {
+    display: none;
+  }
+}</style><style type="text/css" data-vite-dev-id="E:/code/react-projects/src/Pages/SynonymsSearch/search.css">.table {
+  margin: 0 auto;
+  font-size: x-large;
+}
+
+.label {
+  font-size: x-large;
+}
+
+.inputBox {
+  margin: 0 20px;
+  font-size: x-large;
+  width: 300px;
+  height: 55px;
+  text-align: center;
+}</style><style type="text/css" data-vite-dev-id="E:/code/react-projects/src/Pages/MemoryBoard/MemoryBoard.css">.grid {
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  margin: 10px 20px;
+  height: 225px;
+  width: 225px;
+  background-color: transparent;
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  height: 225px;
+  width: 225px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  object-fit: cover;
+}
+
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #463E72;
+}
+
+/* Style the back side */
+.flip-card-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #463E72;
+}</style></head>
+
+<body>
+  <div id="root"><main><div class="heroBanner" style="justify-content: space-evenly;"><div class="center-align" style="padding: 50px;"><h1 style="margin-bottom: 0px;">Andrew Cosmic</h1><p style="font-weight: bold; font-style: italic; font-size: x-large;">Full stack Developer</p><p style="padding: 0px 40px;">Hey there, I'm Andrew Cosmic, a full stack developer based in Kent, WA. When I'm not crafting code, you can find me jamming out with synthesizers, diving into gaming adventures, and mastering the art of skateboarding. Let's build something awesome together!</p></div><div class="heroBanner-image"><img id="heroImage" src="./Andrew Cosmic_files/andrew.png" alt="image of me"></div></div><div style="" class="heroBanner"><img id="journey-img" src="./Andrew Cosmic_files/fun-me.jpg" alt=" long image of me" style="width: 200px;"><div style="display: flex; flex-direction: column; padding: 0px 60px;"><h2>My Engineering Journey</h2><div style="text-align: left;"><p>Both my parents were IT professionals, so I was exposed to computers from a very young age. In the early 1980s, my dad bought one of the original IBM PCs with 64K of memory and two 360K floppy disks, which ignited my curiosity about technology.</p><p>In middle school, I attended a summer IT camp at the University of Michigan, where I learned HTML, CSS, and JavaScript. I was ahead of my classmates and even built a full calculator during the camp. In high school, I took an extracurricular Visual Basic course, further deepening my interest in programming.</p><p> Although my parents dissuaded me from pursuing IT in college due to concerns about outsourcing, leading me to earn a bachelor's degree in pre-law, my passion for engineering persisted. I returned to school at Seattle Central Community College, where I learned about containerization and Internet protocols. However, the limited course offerings prompted me to transfer to a college in Washington that accepted my credits and offered a Post-Bachelor Studies program in Database Administration.</p><p>There, I learned object-oriented programming in Java, C#, and .NET, as well as web development and database optimization. This unconventional path, marked by early exposure, continuous self-driven learning, and overcoming initial career misdirection, has profoundly shaped my software development journey.</p></div></div></div><div><h2> Websites</h2><div class="heroBanner" style="display: flex;"><a href="https://myexercisebuddy.netlify.app/" target="_blank"><img src="./Andrew Cosmic_files/gym.png" alt="My Exercise Buddy" style="width: 500px;"></a><div class="center-align"><h3>My Exercise Buddy</h3><div style="display: flex; flex-flow: wrap; justify-content: space-around;"><button class="language-buttons" jf-ext-button-ct="react">React</button><button class="language-buttons" jf-ext-button-ct="mui">MUI</button><button class="language-buttons" jf-ext-button-ct="rapidapi">rapidapi</button></div><p style="padding: 0px 40px;">An app that lets you search for workouts. You can target muscle groups or equipment. Each workout includes a video and related workouts</p></div></div><div class="heroBanner" style="display: flex;"><div class="center-align"><h3>Knowledge center - Liveperson</h3><div style="display: flex; flex-flow: wrap; justify-content: space-around;"><button class="language-buttons" jf-ext-button-ct="react">React</button><button class="language-buttons" jf-ext-button-ct="tailwind">Tailwind</button><button class="language-buttons" jf-ext-button-ct="graphql">Graphql</button><button class="language-buttons" jf-ext-button-ct="express">Express</button><button class="language-buttons" jf-ext-button-ct="nodejs">NodeJs</button></div><p style="padding: 0px 40px;">Liveperson  knowledge center site. Helps users understand how they can use Liveperson Conversational Cloud  </p></div><a href="https://knowledge.liveperson.com/" target="_blank"><img src="./Andrew Cosmic_files/knowledge.png" alt="Knowledge center - Liveperson" style="width: 500px;"></a></div></div><h2 id="projects">Projects</h2><div class="projects"><div class="project-card"><div class="center-align"><label class="label" for="synonym-search">Synonym Search</label><p class="description">Simple search for synonyms </p><a class="" href="http://localhost:5173/synonyms"><img id="synonym-search" class="project" src="./Andrew Cosmic_files/synonyms.png"></a></div></div><div class="project-card"><div class="center-align"><label class="label" for="memory-name">Memory Game</label><p class="description">Card game where you want to find all the matches</p><a class="" href="http://localhost:5173/memory-game"><img id="memory-name" class="project" src="./Andrew Cosmic_files/memory-game.png"></a></div></div><div class="project-card"><div class="center-align"><label class="label" for="color-guesser">Color Guesser</label><p class="description">Game to guess what the hex color is</p><a class="" href="http://localhost:5173/color-guesser"><img id="color-guesser" class="project" src="./Andrew Cosmic_files/guess.png"></a></div></div></div><h2>Synths, Guitars and Skateboards</h2><img src="./Andrew Cosmic_files/slide1.jpg" style="height: 600px;"><div class="button-list"><button jf-ext-button-ct="prev">prev</button><button jf-ext-button-ct="next">next</button></div><div style="margin: 40px 0px;"><h2>Contact Me</h2><div style="display: flex; flex-flow: wrap; justify-content: space-evenly;"><a href="http://localhost:5173/src/assets/AndrewCosmic-Resume.pdf"><img class="social-img" src="./Andrew Cosmic_files/resume.png" alt="resume"></a><p>Phone number: 248-935-8911</p><a href="mailto:%20acdickin@gmail.com"> <img class="social-img" src="./Andrew Cosmic_files/email.png" alt="linkedin"></a><a href="https://www.linkedin.com/in/andrew-cosmic-a8bbb22a/" target="_blank"><img class="social-img" src="./Andrew Cosmic_files/linkedin.png" alt="linkedin"></a><a href="https://github.com/acdickin/" target="_blank"><img class="social-img" src="./Andrew Cosmic_files/GitHub.png" alt="github"></a><br></div></div></main></div>
+  <script type="module" src="./Andrew Cosmic_files/main.tsx"></script>
+
+
+</body></html>

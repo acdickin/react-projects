@@ -20,7 +20,7 @@ const Contact = () => {
                 <a href="https://github.com/acdickin/" target="_blank">
                     <img className="social-img" src={github} alt="github" />
                 </a>
-                <br />
+
             </div>
         </div>
     )

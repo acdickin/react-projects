@@ -8,8 +8,6 @@ body {
   display: block;
 }
 
-
-
 .heroBanner-image {
   height: 400px;
   width: 400px;
@@ -29,11 +27,8 @@ body {
   justify-content: space-between;
 }
 
-@media screen and (max-width: 1280px) {
-  .heroBanner {
-    flex-direction: column;
-    margin: 0 auto;
-  }
+.heroText {
+  padding: 0 40px;
 }
 
 .social-img {
@@ -128,6 +123,14 @@ body {
   margin: 10px auto;
 }
 
+.websiteButtons {
+  display: 'flex';
+  flex-direction: 'row', ;
+  justify-content: 'space-around';
+  flex-wrap: 'wrap';
+}
+
+
 .guess-me {
   width: 500px;
   height: 500px;
@@ -171,4 +174,32 @@ button {
 
 .language-buttons {
   margin: 0 20px;
+}
+
+#journey-img {
+  width: 200px;
+}
+
+
+@media screen and (max-width: 1280px) {
+  .heroBanner {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .heroText {
+    padding: 0
+  }
+
+  h2 {
+    margin-top: 20px;
+  }
+
+  .reverse {
+    flex-direction: column
+  }
+
+  #journey-img {
+    display: none;
+  }
 }
