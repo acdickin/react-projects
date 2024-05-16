@@ -1,4 +1,3 @@
-import React from 'react'
 import fun from '../assets/fun-me.jpg'
 const Journey = () => {
     return (
