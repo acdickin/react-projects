@@ -5,6 +5,7 @@ import HeroBanner from "./components/HeroBanner"
 import ImageSlider from "./components/ImageSlider";
 import Contact from "./components/Contact";
 import Journey from "./components/Journey";
+import SoundCloudWidget from "./components/SoundCloudWidget";
 const Home = () => {
     return (
         <>
@@ -12,6 +13,7 @@ const Home = () => {
             <Journey />
             <Websites />
             <Projects />
+            <SoundCloudWidget />
             <ImageSlider />
             <Contact />
         </>

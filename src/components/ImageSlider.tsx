@@ -5,10 +5,10 @@ import slide3 from '../assets/slide3.jpg'
 import slide4 from '../assets/slide4.jpg'
 
 const SLIDES = [
-  slide1,
+  slide4,
   slide2,
   slide3,
-  slide4
+  slide1
 ]
 
 const Controls = ({ slideIndex, setSlide }: any) => {
