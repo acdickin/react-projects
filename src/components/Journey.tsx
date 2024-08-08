@@ -1,5 +1,5 @@
 import fun from '../assets/fun-me.jpg'
-import resume from '../assets/AndrewCosmicResume.pdf'
+import resume from '../assets/ResumeAndrewCosmic.pdf'
 const Journey = () => {
     return (
         <div className="heroBanner">
