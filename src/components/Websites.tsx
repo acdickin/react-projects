@@ -49,8 +49,7 @@ const Websites = () => {
               <button className="language-buttons">Tailwind</button>
             </div>
             <p style={{ padding: "0 40px" }}>
-              Liveperson knowledge center site. Helps users understand how they
-              can use Liveperson Conversational Cloud{" "}
+                A chat app built with the MERN stack. It allows users to create accounts, log in, and chat with other users in real-time. It uses socket.io for real-time communication and JWT for authentication.
             </p>
           </div>
         </a>
