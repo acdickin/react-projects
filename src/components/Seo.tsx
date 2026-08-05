@@ -54,7 +54,7 @@ const Seo = () => {
 
   useEffect(() => {
     const pathname = location.pathname;
-    const route = routeMeta[pathname] || routeMeta['/'];
+    const route = routeMeta[pathname] || { title: defaultTitle, description: defaultDescription, keywords: 'Andrew Cosmic, frontend engineer, full stack engineer, React developer, Kent Washington' };
     const origin = window.location.origin;
     const canonicalUrl = `${origin}${pathname}`;
 
