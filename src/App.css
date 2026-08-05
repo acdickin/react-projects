@@ -8,23 +8,45 @@ body {
   display: block;
 }
 
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .heroBanner-image {
   height: 400px;
-  width: 400px;
   padding: 40px 0 0 0;
   margin: 0 auto;
 }
 
 #heroImage {
-  background-image: url('./assets/nebula-wallpaper.jpg');
+  height: 100%;
+  object-fit: cover;
+  background-image: url("./assets/nebula-wallpaper.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 40% 5%;
+  border-radius: 15%;
 }
 
-.heroBanner {
+.switchback {
   display: flex;
   justify-content: space-between;
+}
+.card {
+  padding: 2em;
+  box-shadow: 8px 8px 12px #00000040;
+}
+.card:hover {
+  box-shadow: 8px 8px 18px #646cff40;
+}
+
+.websites {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
 
 .heroText {
@@ -40,7 +62,7 @@ body {
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%
+  width: 100%;
 }
 
 .header {
@@ -124,12 +146,11 @@ body {
 }
 
 .websiteButtons {
-  display: 'flex';
-  flex-direction: 'row', ;
-  justify-content: 'space-around';
-  flex-wrap: 'wrap';
+  display: "flex";
+  flex-direction: "row";
+  justify-content: "space-around";
+  flex-wrap: "wrap";
 }
-
 
 .guess-me {
   width: 500px;
@@ -164,11 +185,11 @@ body {
 }
 
 a {
-  color: #463E72
+  color: #463e72;
 }
 
 button {
-  background-image: linear-gradient(315deg, #463E72 0%, #3B9BD6 74%);
+  background: #463e72;
   color: white;
   border: none;
 }
@@ -181,15 +202,50 @@ button {
   width: 200px;
 }
 
-
 @media screen and (max-width: 1280px) {
+  .app {
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
   .heroBanner {
+    display: flex;
     flex-direction: column;
     margin: 0 auto;
+    gap: 20px;
+    box-sizing: border-box;
   }
 
   .heroText {
-    padding: 0
+    padding: 0;
+    width: 100%;
+  }
+
+  .projects {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .project {
+    width: min(100%, 350px);
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .heroBanner a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .heroBanner img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
   }
 
   h2 {
@@ -197,7 +253,7 @@ button {
   }
 
   .reverse {
-    flex-direction: column
+    flex-direction: column;
   }
 
   #journey-img {

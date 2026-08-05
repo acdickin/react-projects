@@ -1,24 +1,21 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
-import App from './App'
-import Home from './Home'
-import Search from './Pages/SynonymsSearch/SynonymsSearch'
-import Post from './Pages/Posts/DisplayPosts'
-import Guess from './Pages/ColorGuesser/Guess'
-import MemoryBoard from './Pages/MemoryBoard/MemoryBoard'
-import Todo from './Pages/Todo/Todo'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import Home from "./Home";
+import Search from "./Pages/SynonymsSearch/SynonymsSearch";
+import Post from "./Pages/Posts/DisplayPosts";
+import Guess from "./Pages/ColorGuesser/Guess";
+import MemoryBoard from "./Pages/MemoryBoard/MemoryBoard";
+import Todo from "./Pages/Todo/Todo";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const router = createBrowserRouter([
   {
     element: <App />,
     children: [
       {
         path: "/",
-        element: <Home />
+        element: <Home />,
       },
       {
         path: "/synonyms",
@@ -38,15 +35,14 @@ const router = createBrowserRouter([
       },
       {
         path: "/color-guesser",
-        element: <Guess />
-      }
-
+        element: <Guess />,
+      },
     ],
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>,
-)
+);

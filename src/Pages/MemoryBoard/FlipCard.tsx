@@ -1,5 +1,5 @@
-import './MemoryBoard.css'
-import cardIcon from '../../assets/card.jpeg'
+import "./MemoryBoard.css";
+import cardIcon from "../../assets/card.webp";
 
 interface props {
   index: number;
@@ -10,22 +10,29 @@ interface props {
   value: number;
 }
 
-const FlipCard = ({ index, isFlipped, isLocked, isDisabled, handleSelect, value }: props) => {
+const FlipCard = ({
+  index,
+  isFlipped,
+  isLocked,
+  isDisabled,
+  handleSelect,
+  value,
+}: props) => {
   const handleClick = (e: React.MouseEvent, selected: number) => {
-    e.preventDefault()
+    e.preventDefault();
     if (!isLocked && !isDisabled) {
-      console.log(selected)
-      handleSelect(selected)
+      console.log(selected);
+      handleSelect(selected);
     }
-  }
+  };
 
   function shouldFlip(): String {
     return isFlipped ? "" : "flip ";
   }
 
   return (
-    <div className="flip-card" onClick={e => handleClick(e, index)}>
-      <div className={`flip-card-inner ${shouldFlip()}`} >
+    <div className="flip-card" onClick={(e) => handleClick(e, index)}>
+      <div className={`flip-card-inner ${shouldFlip()}`}>
         <div className={`flip-card-front ${shouldFlip()}`}>
           <img src={cardIcon} alt="card image" />
         </div>
@@ -34,7 +41,7 @@ const FlipCard = ({ index, isFlipped, isLocked, isDisabled, handleSelect, value 
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default FlipCard;

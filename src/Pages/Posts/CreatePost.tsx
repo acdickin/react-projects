@@ -7,7 +7,9 @@ const CreatePost = () => {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
 
-  const mutation = useMutation((newPost) => axios.post("https://jsonplaceholder.typicode.com/posts", newPost));
+  const mutation = useMutation((newPost) =>
+    axios.post("https://jsonplaceholder.typicode.com/posts", newPost),
+  );
 
   const submitData = () => {
     // @ts-ignore
@@ -29,8 +31,18 @@ const CreatePost = () => {
 
   return (
     <div>
-      <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Title" />
-      <input type="text" value={body} onChange={(e) => setBody(e.target.value)} placeholder="Body" />
+      <input
+        type="text"
+        value={title}
+        onChange={(e) => setTitle(e.target.value)}
+        placeholder="Title"
+      />
+      <input
+        type="text"
+        value={body}
+        onChange={(e) => setBody(e.target.value)}
+        placeholder="Body"
+      />
       <button onClick={submitData}>Submit</button>
     </div>
   );

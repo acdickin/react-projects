@@ -4,7 +4,6 @@
   flex-wrap: wrap;
 }
 
-
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   margin: 10px 20px;
@@ -26,7 +25,6 @@
   object-fit: cover;
 }
 
-
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip {
   transform: rotateY(180deg);
@@ -41,12 +39,11 @@
   -webkit-backface-visibility: hidden;
   /* Safari */
   backface-visibility: hidden;
-
 }
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #463E72;
+  background-color: #463e72;
 }
 
 /* Style the back side */
@@ -55,5 +52,5 @@
   align-items: center;
   justify-content: center;
   color: white;
-  background-color: #463E72;
+  background-color: #463e72;
 }
