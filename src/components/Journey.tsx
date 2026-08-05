@@ -26,7 +26,7 @@ const Journey = () => {
           </p>
         </div>
         <br />
-        <a href={resumeUrl} target="_blank" rel="noopener noreferrer">
+        <a href={resumeUrl} download rel="noopener noreferrer">
           <button> Download My resume</button>
         </a>
       </div>

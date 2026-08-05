@@ -16,7 +16,7 @@ const Contact = () => {
           flexWrap: "wrap",
         }}
       >
-        <a href={resumeUrl} target="_blank" rel="noopener noreferrer">
+        <a href={resumeUrl} download rel="noopener noreferrer">
           <img className="social-img" src={resumeImg} alt="resume" />
         </a>
         <a href="mailto: acdickin@gmail.com">

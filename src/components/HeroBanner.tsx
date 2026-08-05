@@ -21,7 +21,7 @@ const HeroBanner = () => {
           PostgreSQL. I'm passionate about creating intuitive user experiences,
           scalable systems, and clean, maintainable code.
         </p>
-        <a href={resumeUrl} target="_blank" rel="noopener noreferrer">
+        <a href={resumeUrl} download rel="noopener noreferrer">
           <button> Download My resume</button>
         </a>
       </div>
