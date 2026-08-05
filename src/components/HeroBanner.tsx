@@ -1,6 +1,6 @@
 import me from "../assets/andrew.webp";
 
-const resumeUrl = "/ResumeAndrewCosmic-2026.pdf";
+const resumeUrl = "/ResumeAndrewCosmic_2026.pdf";
 
 const HeroBanner = () => {
   return (

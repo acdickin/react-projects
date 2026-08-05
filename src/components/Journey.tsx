@@ -1,7 +1,7 @@
 import '../App.css'
 import fun from "../assets/fun-me.webp";
 
-const resumeUrl = "/ResumeAndrewCosmic-2026.pdf";
+const resumeUrl = "/ResumeAndrewCosmic_2026.pdf";
 const Journey = () => {
   return (
     <div className="switchback" style={{ justifyContent: "space-evenly" }}>
