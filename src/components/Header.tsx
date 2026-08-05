@@ -5,7 +5,7 @@ import email from "../assets/email.webp";
 
 import { useLocation } from "react-router-dom";
 
-const resumeUrl = "/ResumeAndrewCosmic.pdf";
+const resumeUrl = "/ResumeAndrewCosmic-2026.pdf";
 const Header = () => {
   const { pathname } = useLocation();
   return (
