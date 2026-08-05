@@ -2,7 +2,7 @@ import linkedin from "../assets/linkedin.png";
 import email from "../assets/email.webp";
 import resumeImg from "../assets/resume.png";
 
-const resumeUrl = "/ResumeAndrewCosmic_2026.pdf";
+const resumeUrl = "/AndrewCosmicResume_2026.pdf";
 
 const Contact = () => {
   return (
