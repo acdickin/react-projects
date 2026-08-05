@@ -1,6 +1,6 @@
 import '../App.css'
 import fun from "../assets/fun-me.webp";
-import resume from "../assets/ResumeAndrewCosmic-2026.pdf";
+import resume from "../assets/ResumeAndrewCosmic.pdf";
 const Journey = () => {
   return (
     <div className="switchback" style={{ justifyContent: "space-evenly" }}>

@@ -1,5 +1,5 @@
 import me from "../assets/andrew.webp";
-import resume from "../assets/ResumeAndrewCosmic-2026.pdf";
+import resume from "../assets/ResumeAndrewCosmic.pdf";
 
 const HeroBanner = () => {
   return (

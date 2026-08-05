@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import "../App.css";
 import linkedin from "../assets/linkedin.png";
 import email from "../assets/email.webp";
-import resume from "../assets/ResumeAndrewCosmic-2026.pdf";
+import resume from "../assets/ResumeAndrewCosmic.pdf";
 
 import { useLocation } from "react-router-dom";
 const Header = () => {
