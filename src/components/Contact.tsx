@@ -2,7 +2,7 @@ import linkedin from "../assets/linkedin.png";
 import email from "../assets/email.webp";
 import resumeImg from "../assets/resume.png";
 
-const resumeUrl = "https://andrewcosmic.netlify.app//ResumeAndrewCosmic.pdf";
+const resumeUrl = "https://andrewcosmic.netlify.app/ResumeAndrewCosmic.pdf";
 
 const Contact = () => {
   return (

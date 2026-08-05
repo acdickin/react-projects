@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://andrewcosmic.netlify.app//</loc>
+    <loc>https://andrewcosmic.netlify.app/</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://andrewcosmic.netlify.app//synonyms</loc>
+    <loc>https://andrewcosmic.netlify.app/synonyms</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://andrewcosmic.netlify.app//memory-game</loc>
+    <loc>https://andrewcosmic.netlify.app/memory-game</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://andrewcosmic.netlify.app//todo</loc>
+    <loc>https://andrewcosmic.netlify.app/todo</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://andrewcosmic.netlify.app//color-guesser</loc>
+    <loc>https://andrewcosmic.netlify.app/color-guesser</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
