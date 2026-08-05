@@ -1,6 +1,7 @@
 import '../App.css'
 import fun from "../assets/fun-me.webp";
-import resume from "../assets/ResumeAndrewCosmic.pdf";
+
+const resumeUrl = "https://andrewcosmic.netlify.app//ResumeAndrewCosmic.pdf";
 const Journey = () => {
   return (
     <div className="switchback" style={{ justifyContent: "space-evenly" }}>
@@ -25,7 +26,7 @@ const Journey = () => {
           </p>
         </div>
         <br />
-        <a href={resume}>
+        <a href={resumeUrl} target="_blank" rel="noopener noreferrer">
           <button> Download My resume</button>
         </a>
       </div>

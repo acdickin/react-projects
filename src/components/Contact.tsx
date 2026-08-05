@@ -1,7 +1,8 @@
 import linkedin from "../assets/linkedin.png";
-import resume from "../assets/ResumeAndrewCosmic.pdf";
 import email from "../assets/email.webp";
 import resumeImg from "../assets/resume.png";
+
+const resumeUrl = "https://andrewcosmic.netlify.app//ResumeAndrewCosmic.pdf";
 
 const Contact = () => {
   return (
@@ -15,7 +16,7 @@ const Contact = () => {
           flexWrap: "wrap",
         }}
       >
-        <a href={resume}>
+        <a href={resumeUrl} target="_blank" rel="noopener noreferrer">
           <img className="social-img" src={resumeImg} alt="resume" />
         </a>
         <a href="mailto: acdickin@gmail.com">

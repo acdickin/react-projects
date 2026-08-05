@@ -1,5 +1,6 @@
 import me from "../assets/andrew.webp";
-import resume from "../assets/ResumeAndrewCosmic.pdf";
+
+const resumeUrl = "https://andrewcosmic.netlify.app//ResumeAndrewCosmic.pdf";
 
 const HeroBanner = () => {
   return (
@@ -20,7 +21,7 @@ const HeroBanner = () => {
           PostgreSQL. I'm passionate about creating intuitive user experiences,
           scalable systems, and clean, maintainable code.
         </p>
-        <a href={resume}>
+        <a href={resumeUrl} target="_blank" rel="noopener noreferrer">
           <button> Download My resume</button>
         </a>
       </div>
