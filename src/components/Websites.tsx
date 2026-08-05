@@ -1,3 +1,4 @@
+import '../App.css';
 import exerciseBuddy from "../assets/gym.webp";
 import knowledge from "../assets/knowledge.webp";
 import chat from "../assets/chatapp.webp";
@@ -13,7 +14,7 @@ const Websites = () => {
         <img
           src={exerciseBuddy}
           alt="My Exercise Buddy"
-          style={{ width: "100%", maxWidth: "800px", height: "auto" }}
+          className="website-image"
         />
 
         <div className="center-align">
@@ -36,7 +37,7 @@ const Websites = () => {
           <img
             src={chat}
             alt="Chat App"
-            style={{ width: "100%", maxWidth: "800px", height: "auto" }}
+            className="website-image"
           />
 
           <div className="center-align ">
@@ -63,7 +64,7 @@ const Websites = () => {
         <img
           src={knowledge}
           alt="Knowledge center - Liveperson"
-          style={{ width: "100%", maxWidth: "800px", height: "auto" }}
+          className="website-image"
         />
 
         <div className="center-align">

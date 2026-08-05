@@ -1,9 +1,9 @@
 import me from "../assets/andrew.webp";
-import resume from "../assets/ResumeAndrewCosmic.pdf";
+import resume from "../assets/ResumeAndrewCosmic-2026.pdf";
 
 const HeroBanner = () => {
   return (
-    <div className="switchback" style={{ justifyContent: "space-evenly" }}>
+    <div className="switchback">
       <div className="center-align" style={{ padding: "50px" }}>
         <h1 style={{ marginBottom: "0px" }}>Hi, I'm Andrew Cosmic.</h1>
         <h2
@@ -24,7 +24,7 @@ const HeroBanner = () => {
           <button> Download My resume</button>
         </a>
       </div>
-      <div className="heroBanner-image">
+      <div className="switchback-image">
         <img id="heroImage" src={me} alt="image of me" />
       </div>
     </div>

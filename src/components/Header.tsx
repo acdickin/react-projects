@@ -2,8 +2,7 @@ import { NavLink } from "react-router-dom";
 import "../App.css";
 import linkedin from "../assets/linkedin.png";
 import email from "../assets/email.webp";
-import resumeImg from "../assets/resume.png";
-import resume from "../assets/ResumeAndrewCosmic.pdf";
+import resume from "../assets/ResumeAndrewCosmic-2026.pdf";
 
 import { useLocation } from "react-router-dom";
 const Header = () => {
@@ -19,9 +18,6 @@ const Header = () => {
       )}
 
       <div className="socials">
-        <a href={resume}>
-          <img className="social-img" src={resumeImg} alt="resume" />
-        </a>
         <a href="mailto: acdickin@gmail.com">
           {" "}
           <img className="social-img" src={email} alt="linkedin" />

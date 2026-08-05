@@ -1,16 +1,17 @@
+import '../App.css'
 import fun from "../assets/fun-me.webp";
-import resume from "../assets/ResumeAndrewCosmic.pdf";
+import resume from "../assets/ResumeAndrewCosmic-2026.pdf";
 const Journey = () => {
   return (
-    <div className="heroBanner">
+    <div className="switchback" style={{ justifyContent: "space-evenly" }}>
       <img
-        id="journey-img"
         src={fun}
         alt=" long image of me"
-        style={{ width: "200px" }}
+        className="switchback-image"
       />
       <div
-        style={{ display: "flex", flexDirection: "column", padding: " 0 60px" }}
+      className="center-align"
+        style={{ display: "flex", flexDirection: "column",  justifyContent: "center", padding:"50px" }}
       >
         <h2>My Engineering Journey</h2>
         <div style={{ textAlign: "left" }}>
