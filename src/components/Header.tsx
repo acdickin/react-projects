@@ -5,7 +5,7 @@ import email from "../assets/email.webp";
 
 import { useLocation } from "react-router-dom";
 
-const resumeUrl = "https://andrewcosmic.netlify.app/ResumeAndrewCosmic.pdf";
+const resumeUrl = "/ResumeAndrewCosmic.pdf";
 const Header = () => {
   const { pathname } = useLocation();
   return (

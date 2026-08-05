@@ -1,6 +1,6 @@
 import me from "../assets/andrew.webp";
 
-const resumeUrl = "https://andrewcosmic.netlify.app/ResumeAndrewCosmic.pdf";
+const resumeUrl = "/ResumeAndrewCosmic.pdf";
 
 const HeroBanner = () => {
   return (
