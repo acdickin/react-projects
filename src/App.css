@@ -11,7 +11,7 @@ body {
 .app {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 48px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -52,7 +52,7 @@ body {
 .websites {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 32px;
 }
 
 .website-image {
@@ -244,26 +244,25 @@ button {
 
 
 h2 {
-  margin-top: 20px;
+  font-size:40px;
 }
 
 
 @media screen and (min-width: 768px) {
-  .switchback {
-    display: flex;
-    flex-direction: row;
-  }
+
+  
 
   .switchback-image {
-    width: 400px;
+    max-width: 500px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .switchback-image {
-    max-width: 600px;
+  .switchback{
+    flex-direction:row;
   }
   .app {
+      gap:48px;
     padding: 0 16px;
     box-sizing: border-box;
   }
@@ -282,12 +281,12 @@ h2 {
   }
 
   .projects {
-    width: auto;
+    display:flex;
     justify-content: flex-start;
   }
 
   .project-card {
-    width: auto;
+    width:400px;
   }
 
   .project {

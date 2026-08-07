@@ -32,7 +32,7 @@ const Projects = () => {
   ];
   return (
     <>
-      <h2 id="projects">Projects</h2>
+      <h2 id="projects">Fun Projects</h2>
       <div className="projects">
         {projectList.map((project) => (
           <ProjectInfo project={project} key={project.key} />
