@@ -17,17 +17,14 @@ body {
 }
 
 .switchback-image {
+  display:flex;
+  justify-content:center;
+  align-items:center;
   width:100%;
-  margin:0 auto;
+  margin:10px auto;
+  border-radius:25px;
 }
 
-#heroImage {
-  object-fit: cover;
-  background-image: url("./assets/nebula-wallpaper.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 15%;
-}
 
 .switchback {
   display: flex;
@@ -259,11 +256,13 @@ h2 {
 
   .switchback-image {
     width: 400px;
-
   }
 }
 
 @media screen and (min-width: 1280px) {
+  .switchback-image {
+    max-width: 600px;
+  }
   .app {
     padding: 0 16px;
     box-sizing: border-box;

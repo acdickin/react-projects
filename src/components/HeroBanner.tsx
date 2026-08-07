@@ -1,5 +1,5 @@
-import me from "../assets/andrew.webp";
-
+import me from "../assets/headshot1.webp";
+import '../App.css'
 const resumeUrl = "/AndrewCosmicResume_2026.pdf";
 
 const HeroBanner = () => {
@@ -25,9 +25,9 @@ const HeroBanner = () => {
           <button> Download My resume</button>
         </a>
       </div>
-      <div className="switchback-image">
-        <img id="heroImage" src={me} alt="image of me" />
-      </div>
+   
+        <img className="switchback-image" src={me} alt="image of me" />
+      
     </div>
   );
 };

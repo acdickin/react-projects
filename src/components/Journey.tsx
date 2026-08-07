@@ -4,7 +4,7 @@ import fun from "../assets/fun-me.webp";
 const resumeUrl = "/AndrewCosmicResume_2026.pdf";
 const Journey = () => {
   return (
-    <div className="switchback" style={{ justifyContent: "space-evenly" }}>
+    <div className="switchback">
       <img
         src={fun}
         alt=" long image of me"
