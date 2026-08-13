@@ -46,8 +46,8 @@ function SynonymsSearch() {
   };
 
   return (
-    <div className="flex flex-col gap-4">
-      <div className="search">
+    <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6">
         <h1>Synonym Search Page</h1>
         <form onSubmit={handleFetchSynonyms}>
           <div>

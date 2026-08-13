@@ -65,7 +65,7 @@ const Guess = () => {
   };
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-6">
       <h1>Guess</h1>
       <div style={{ display: "flex", margin: "0 auto" }}>
         <div className="guess-me" style={{ background: correct }} />

@@ -34,7 +34,7 @@ const Todo = () => {
     return <li key={task.id}>{task.name}</li>;
   };
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-6">
       <form onSubmit={(e) => addTask(e)}>
         <input
           type="text"

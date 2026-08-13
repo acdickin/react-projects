@@ -16,7 +16,7 @@ export const Users =()=>{
    
 
     return (
-        <div className="flex flex-col gap-4 items-center">
+        <div className="flex flex-col gap-6 items-center">
             <h1>Debounced User Search</h1>
             <input className="w-[50%]" type="text" placeholder="Type to search" value={query} onChange={((e)=>setQuery(e.target.value))}/>
             {isLoading &&<div className="flex justify-center py-12"> <RingLoader loading={true} size={200} color="#3b82f6" /></div> }
