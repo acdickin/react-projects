@@ -2,7 +2,6 @@ import {useEffect,useState, memo} from 'react';
 import type {UserData} from './UserData';
 import {useDebounce} from './hooks/useDebounce';
 import {useUserData} from './hooks/useUserData';
-import { RingLoader } from 'react-spinners';
 
 export const Users =()=>{
     
@@ -19,7 +18,7 @@ export const Users =()=>{
         <div className="flex flex-col gap-6 items-center">
             <h1>Debounced User Search</h1>
             <input className="w-[50%]" type="text" placeholder="Type to search" value={query} onChange={((e)=>setQuery(e.target.value))}/>
-            {isLoading &&<div className="flex justify-center py-12"> <RingLoader loading={true} size={200} color="#3b82f6" /></div> }
+            {isLoading &&<div className="flex justify-center py-12"> Loading ...</div> }
            {
            userData.length>0 && 
             <ul className="flex flex-wrap justify-between gap-6 list-none">
