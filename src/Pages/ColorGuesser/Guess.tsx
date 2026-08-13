@@ -65,7 +65,7 @@ const Guess = () => {
   };
 
   return (
-    <>
+    <div className="flex flex-col gap-4">
       <h1>Guess</h1>
       <div style={{ display: "flex", margin: "0 auto" }}>
         <div className="guess-me" style={{ background: correct }} />
@@ -85,7 +85,7 @@ const Guess = () => {
         <div className="correct"> Correct Anwser</div>
       )}
       {result === Result.Wrong && <div className="wrong"> Wrong Anwser</div>}
-    </>
+   </div>
   );
 };
 

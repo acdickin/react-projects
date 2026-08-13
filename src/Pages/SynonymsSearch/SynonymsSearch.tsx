@@ -46,7 +46,7 @@ function SynonymsSearch() {
   };
 
   return (
-    <>
+    <div className="flex flex-col gap-4">
       <div className="search">
         <h1>Synonym Search Page</h1>
         <form onSubmit={handleFetchSynonyms}>
@@ -55,7 +55,6 @@ function SynonymsSearch() {
               Your word
             </label>
             <input
-              className="inputBox"
               value={word}
               onChange={(e) => setWord(e.target.value)}
               id="word-input"
@@ -66,7 +65,7 @@ function SynonymsSearch() {
         </form>
         {isLoading ? loader() : data.length > 0 && synonymsTable()}
       </div>
-    </>
+    </div>
   );
 }
 export default SynonymsSearch;

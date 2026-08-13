@@ -125,8 +125,8 @@ const MemoryBoard = () => {
 
   const tries = Math.floor(clicks / 2);
   return (
-    <>
-      <div>
+
+      <div className="flex flex-col gap-4">
         <h1>MemoryBoard</h1>
         <h3>Tries:{tries}</h3>
 
@@ -139,7 +139,6 @@ const MemoryBoard = () => {
           </div>
         )}
       </div>
-    </>
   );
 };
 
