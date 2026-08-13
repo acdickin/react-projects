@@ -1,6 +1,6 @@
 const SoundCloudWidget = () => {
   return (
-    <div>
+    <div id="music">
       <h2>Sound Cloud Music </h2>
       <iframe
         width="90%"

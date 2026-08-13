@@ -1,4 +1,3 @@
-import "./App.css";
 import Websites from "./components/Websites";
 import Projects from "./components/Projects";
 import HeroBanner from "./components/HeroBanner";

@@ -4,7 +4,7 @@ import fun from "../assets/fun-me.webp";
 const resumeUrl = "/AndrewCosmicResume_2026.pdf";
 const Journey = () => {
   return (
-    <div className="switchback">
+    <div className="switchback" id="journey">
       <img
         src={fun}
         alt=" long image of me"

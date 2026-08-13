@@ -11,7 +11,7 @@ body {
 .app {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 2em;
   width: 100%;
   box-sizing: border-box;
 }
@@ -79,19 +79,6 @@ body {
   width: 100%;
 }
 
-.header {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.socials {
-  width: 400px;
-  justify-content: space-evenly;
-  display: flex;
-}
-
 .social-img .logo {
   height: 6em;
   padding: 1.5em;
@@ -139,6 +126,7 @@ body {
 .project {
   width: 350px;
   height: 350px;
+  image
   margin: 20px;
   border-radius: 20px;
   border: thick solid;
@@ -190,6 +178,7 @@ body {
 
 .center-align {
   display: flex;
+  gap:1em;
   justify-content: center;
   align-items: center;
   flex-direction: column;

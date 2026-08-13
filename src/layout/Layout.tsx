@@ -5,7 +5,7 @@ const Layout = ({ children }: any) => {
   console.log("path:", pathname);
   return (
     <>
-      {pathname == "/" ? null : <Header />}
+      { <Header />}
       {children}
     </>
   );

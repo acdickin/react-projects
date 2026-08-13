@@ -4,7 +4,7 @@ import knowledge from "../assets/knowledge.webp";
 import chat from "../assets/chatapp.webp";
 const Websites = () => {
   return (
-    <div className="websites">
+    <div className="websites" id="websites">
       <h2> Websites</h2>
       <a
         href="https://myexercisebuddy.netlify.app/"
