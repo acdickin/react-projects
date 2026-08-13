@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react'
-import type { UserData } from '../types/UserData'
+import type { UserData } from '../UserData'
 
 export const useUserData = (limit: number) => {
     const baseUrl = 'https://dummyjson.com/users/'
