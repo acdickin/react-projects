@@ -1,7 +1,6 @@
 import '../App.css'
 import fun from "../assets/fun-me.webp";
 
-const resumeUrl = "/AndrewCosmicResume_2026.pdf";
 const Journey = () => {
   return (
     <div className="switchback" id="journey">
@@ -26,9 +25,7 @@ const Journey = () => {
           </p>
         </div>
         <br />
-        <a href={resumeUrl} download rel="noopener noreferrer">
-          <button> Download My resume</button>
-        </a>
+
       </div>
     </div>
   );

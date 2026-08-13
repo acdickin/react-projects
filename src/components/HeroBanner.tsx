@@ -1,6 +1,5 @@
 import me from "../assets/headshot1.webp";
 import '../App.css'
-const resumeUrl = "/AndrewCosmicResume_2026.pdf";
 
 const HeroBanner = () => {
   return (
@@ -21,9 +20,6 @@ const HeroBanner = () => {
           PostgreSQL. I'm passionate about creating intuitive user experiences,
           scalable systems, and clean, maintainable code.
         </p>
-        <a href={resumeUrl} download rel="noopener noreferrer">
-          <button> Download My resume</button>
-        </a>
       </div>
    
         <img className="switchback-image" src={me} alt="image of me" />
