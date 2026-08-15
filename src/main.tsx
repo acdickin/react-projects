@@ -1,14 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import Home from "./Home";
-import Search from "./Pages/SynonymsSearch/SynonymsSearch";
-import Post from "./Pages/Posts/DisplayPosts";
 import Guess from "./Pages/ColorGuesser/Guess";
 import MemoryBoard from "./Pages/MemoryBoard/MemoryBoard";
+import Post from "./Pages/Posts/DisplayPosts";
+import Search from "./Pages/SynonymsSearch/SynonymsSearch";
 import Todo from "./Pages/Todo/Todo";
-import {Users} from "./Pages/Users/Users";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Users } from "./Pages/Users/Users";
+import { Weather } from './Pages/Weather/Weather';
+
+
 const router = createBrowserRouter([
   {
     element: <App />,
@@ -41,6 +44,10 @@ const router = createBrowserRouter([
         path: "/Users",
         element: <Users />,
       },
+      {
+        path:"/weather",
+        element:<Weather/>,
+      }
     ],
   },
 ]);
