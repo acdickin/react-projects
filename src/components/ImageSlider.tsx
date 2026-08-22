@@ -52,7 +52,7 @@ const ImageSlider = () => {
 
   return (
     <FullBleed className="bg-slate-200 text-slate-900">
-      <section className="flex flex-col gap-5 py-6">
+      <section className="flex flex-col gap-5 py-6" id="hobbies">
         <h2 className="text-2xl font-bold md:text-3xl">
           Synths, Guitars and Skateboards
         </h2>
