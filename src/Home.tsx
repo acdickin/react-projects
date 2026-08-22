@@ -7,7 +7,7 @@ import SoundCloudWidget from './components/SoundCloudWidget'
 import Websites from './components/Websites'
 const Home = () => {
   return (
-    <div className="flex w-full flex-col gap-6 box-border min-[1280px]:gap-12 min-[1280px]:px-4">
+    <div className="flex w-full flex-col box-border min-[1280px]:px-4">
       <HeroBanner />
       <Websites />
       <Projects />

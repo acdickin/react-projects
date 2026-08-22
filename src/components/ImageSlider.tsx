@@ -3,6 +3,7 @@ import slide1 from '../assets/slide1.webp'
 import slide2 from '../assets/slide2.webp'
 import slide3 from '../assets/slide3.webp'
 import slide4 from '../assets/slide4.webp'
+import { FullBleed } from './FullBleed'
 
 const SLIDES = [slide4, slide2, slide3, slide1]
 
@@ -50,13 +51,15 @@ const ImageSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
 
   return (
-    <section className="flex flex-col gap-5">
-      <h2 className="text-2xl font-bold md:text-3xl">
-        Synths, Guitars and Skateboards
-      </h2>
-      <Slide slideNum={currentSlide} />
-      <Controls slideIndex={currentSlide} setSlide={setCurrentSlide} />
-    </section>
+    <FullBleed className="bg-slate-200 text-slate-900">
+      <section className="flex flex-col gap-5 py-6">
+        <h2 className="text-2xl font-bold md:text-3xl">
+          Synths, Guitars and Skateboards
+        </h2>
+        <Slide slideNum={currentSlide} />
+        <Controls slideIndex={currentSlide} setSlide={setCurrentSlide} />
+      </section>
+    </FullBleed>
   )
 }
 

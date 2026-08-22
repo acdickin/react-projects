@@ -37,7 +37,7 @@ const Projects = () => {
     },
   ]
   return (
-    <div id="projects" className="flex flex-col gap-6">
+    <div id="projects" className="flex flex-col gap-6 py-6">
       <h2 id="projects" className="text-2xl font-bold md:text-3xl">
         Fun Projects
       </h2>

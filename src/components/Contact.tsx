@@ -6,7 +6,7 @@ const resumeUrl = '/AndrewCosmicResume_2026.pdf'
 
 const Contact = () => {
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-6 py-6">
       <h2 className="text-2xl font-bold md:text-3xl">Contact Me</h2>
       <div className="flex flex-row flex-wrap justify-evenly">
         <a href={resumeUrl} download rel="noopener noreferrer">
