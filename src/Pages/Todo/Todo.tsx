@@ -1,29 +1,29 @@
-import { useState } from "react";
+import { useState } from 'react'
 
 const Todo = () => {
   interface Task {
-    id: number;
-    name: string;
+    id: number
+    name: string
   }
-  const [todoList, setTodoList] = useState<Task[]>([]);
-  const [task, setTask] = useState<string>("");
+  const [todoList, setTodoList] = useState<Task[]>([])
+  const [task, setTask] = useState<string>('')
 
   const addTask = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("call addTask");
+    e.preventDefault()
+    console.log('call addTask')
     setTodoList((prev: Task[]) => {
       const newTask: Task = {
         id: todoList.length == 0 ? 1 : todoList[todoList.length - 1].id + 1,
         name: task,
-      };
-      return [...prev, newTask];
-    });
-  };
+      }
+      return [...prev, newTask]
+    })
+  }
 
   const handleTask = (e: any) => {
-    e.preventDefault();
-    setTask(e.target.value);
-  };
+    e.preventDefault()
+    setTask(e.target.value)
+  }
   // const removeTask = (id: number) => {
   //   console.log("call removeTask")
   //   const filteredTask = todoList.filter(currentTask => currentTask.id !== id);
@@ -31,8 +31,8 @@ const Todo = () => {
   // }
 
   const renderTasks = (task: Task) => {
-    return <li key={task.id}>{task.name}</li>;
-  };
+    return <li key={task.id}>{task.name}</li>
+  }
   return (
     <div className="flex flex-col gap-6">
       <form onSubmit={(e) => addTask(e)}>
@@ -45,6 +45,6 @@ const Todo = () => {
       </form>
       <ul>{todoList.map((task) => renderTasks(task))}</ul>
     </div>
-  );
-};
-export default Todo;
+  )
+}
+export default Todo

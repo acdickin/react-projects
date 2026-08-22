@@ -1,32 +1,32 @@
-import { useState } from "react";
-import { useMutation } from "react-query";
-import axios from "axios";
+import { useState } from 'react'
+import { useMutation } from 'react-query'
+import axios from 'axios'
 
 // @ts-nocheck
 const CreatePost = () => {
-  const [title, setTitle] = useState("");
-  const [body, setBody] = useState("");
+  const [title, setTitle] = useState('')
+  const [body, setBody] = useState('')
 
   const mutation = useMutation((newPost) =>
-    axios.post("https://jsonplaceholder.typicode.com/posts", newPost),
-  );
+    axios.post('https://jsonplaceholder.typicode.com/posts', newPost)
+  )
 
   const submitData = () => {
     // @ts-ignore
-    mutation.mutate({ title, body });
-  };
+    mutation.mutate({ title, body })
+  }
 
   if (mutation.isLoading) {
-    return <span>Submitting...</span>;
+    return <span>Submitting...</span>
   }
 
   if (mutation.isError) {
     // @ts-ignore
-    return <span>Error: {mutation.error.message}</span>;
+    return <span>Error: {mutation.error.message}</span>
   }
 
   if (mutation.isSuccess) {
-    return <span>Post submitted!</span>;
+    return <span>Post submitted!</span>
   }
 
   return (
@@ -45,6 +45,6 @@ const CreatePost = () => {
       />
       <button onClick={submitData}>Submit</button>
     </div>
-  );
-};
-export default CreatePost;
+  )
+}
+export default CreatePost

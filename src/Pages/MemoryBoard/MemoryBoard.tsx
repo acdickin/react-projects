@@ -1,12 +1,11 @@
-import { useState, useEffect } from "react";
-import "./MemoryBoard.css";
-import FlipCard from "./FlipCard";
+import { useEffect, useState } from 'react'
+import FlipCard from './FlipCard'
 
 // TODO add a lock when correct
 interface Card {
-  value: number;
-  isFlipped: boolean;
-  isLocked: boolean;
+  value: number
+  isFlipped: boolean
+  isLocked: boolean
 }
 
 const MemoryBoard = () => {
@@ -19,95 +18,95 @@ const MemoryBoard = () => {
   //  have to iterate over array to check if true
   // 4. could have array of cards that includes an index to make updating nicer
 
-  const [clicks, setClicks] = useState(0);
-  const [selected, setSelected] = useState<number[]>([]);
-  const [win, setWin] = useState(false);
-  const [disable, setDisable] = useState(false);
+  const [clicks, setClicks] = useState(0)
+  const [selected, setSelected] = useState<number[]>([])
+  const [win, setWin] = useState(false)
+  const [disable, setDisable] = useState(false)
 
   const createBoard = () => {
-    const board: Card[] = [];
-    const list = [...Array(6).keys()].map((x) => ++x);
-    console.log(list);
-    setWin(false);
-    setClicks(0);
-    let doubledlist = list.concat(list);
-    doubledlist = doubledlist.sort(() => Math.random() - 0.5);
+    const board: Card[] = []
+    const list = [...Array(6).keys()].map((x) => ++x)
+    console.log(list)
+    setWin(false)
+    setClicks(0)
+    let doubledlist = list.concat(list)
+    doubledlist = doubledlist.sort(() => Math.random() - 0.5)
     doubledlist.forEach((value) => {
-      board.push({ value: value, isFlipped: false, isLocked: false });
-    });
-    return board;
-  };
-  const [board, setBoard] = useState(() => createBoard());
+      board.push({ value: value, isFlipped: false, isLocked: false })
+    })
+    return board
+  }
+  const [board, setBoard] = useState(() => createBoard())
 
   const updateCardStatus = (selected: number) => {
-    const flip = board[selected].isFlipped ? false : true;
+    const flip = board[selected].isFlipped ? false : true
     setBoard((prevBoard) => {
       return prevBoard.map((card, index) => {
         if (index == selected) {
-          card.isFlipped = flip;
+          card.isFlipped = flip
         }
-        return card;
-      });
-    });
-  };
+        return card
+      })
+    })
+  }
 
   const handleSelect = (selected: number) => {
-    setDisable(true);
-    setClicks((prevClick) => prevClick + 1);
-    setSelected((prevSelected) => [...prevSelected, selected]);
-    updateCardStatus(selected);
+    setDisable(true)
+    setClicks((prevClick) => prevClick + 1)
+    setSelected((prevSelected) => [...prevSelected, selected])
+    updateCardStatus(selected)
     setTimeout(() => {
-      setDisable(false);
-    }, 600);
-  };
+      setDisable(false)
+    }, 600)
+  }
 
   useEffect(() => {
     if (selected.length == 2) {
       setTimeout(() => {
-        verify();
-      }, 600);
+        verify()
+      }, 600)
     }
-  }, [selected]);
+  }, [selected])
 
   useEffect(() => {
     if (clicks > 10 && clicks % 2 == 0) {
-      checkIfWin();
+      checkIfWin()
     }
-  }, [board]);
+  }, [board])
 
   const checkIfWin = () => {
-    console.log("checkboard win:", board);
+    console.log('checkboard win:', board)
     let isWin = board.every((card: Card, i: number) => {
-      console.log(`${i}:${card.isLocked}`);
-      return card.isLocked;
-    });
-    console.log(isWin);
+      console.log(`${i}:${card.isLocked}`)
+      return card.isLocked
+    })
+    console.log(isWin)
     if (isWin) {
-      setWin(true);
+      setWin(true)
     }
-  };
+  }
   const verify = () => {
     if (board[selected[0]].value !== board[selected[1]].value) {
       setBoard((prevBoard) => {
         return prevBoard.map((card, index) => {
           if (index == selected[0] || index == selected[1]) {
-            card.isFlipped = false;
+            card.isFlipped = false
           }
-          return card;
-        });
-      });
+          return card
+        })
+      })
     } else {
       setBoard((prevBoard) => {
         return prevBoard.map((card, index) => {
           if (selected[0] == index || selected[1] == index) {
-            card.isLocked = true;
+            card.isLocked = true
           }
-          return card;
-        });
-      });
+          return card
+        })
+      })
     }
-    setSelected(() => []);
-  };
+    setSelected(() => [])
+  }
 
   const displayBoard = () => {
     return board.map((card: Card, index: number) => (
@@ -120,26 +119,25 @@ const MemoryBoard = () => {
         isDisabled={disable}
         handleSelect={handleSelect}
       />
-    ));
-  };
+    ))
+  }
 
-  const tries = Math.floor(clicks / 2);
+  const tries = Math.floor(clicks / 2)
   return (
+    <div className="flex flex-col gap-6">
+      <h1>MemoryBoard</h1>
+      <h3>Tries:{tries}</h3>
 
-      <div className="flex flex-col gap-6">
-        <h1>MemoryBoard</h1>
-        <h3>Tries:{tries}</h3>
+      {!win ? (
+        <div className="flex flex-wrap justify-evenly">{displayBoard()}</div>
+      ) : (
+        <div>
+          <h1>YOU WIN!!!</h1>{' '}
+          <button onClick={() => setBoard(createBoard)}>Restart</button>
+        </div>
+      )}
+    </div>
+  )
+}
 
-        {!win ? (
-          <div className="grid">{displayBoard()}</div>
-        ) : (
-          <div>
-            <h1>YOU WIN!!!</h1>{" "}
-            <button onClick={() => setBoard(createBoard)}>Restart</button>
-          </div>
-        )}
-      </div>
-  );
-};
-
-export default MemoryBoard;
+export default MemoryBoard

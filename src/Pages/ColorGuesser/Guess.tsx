@@ -1,76 +1,77 @@
-import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useEffect, useState } from 'react'
+import { useLocation } from 'react-router-dom'
 
 const generateColor = () => {
   const digits = [
-    "0",
-    "1",
-    "2",
-    "3",
-    "4",
-    "5",
-    "6",
-    "7",
-    "8",
-    "9",
-    "5",
-    "a",
-    "b",
-    "c",
-    "d",
-    "e",
-    "f",
-  ];
+    '0',
+    '1',
+    '2',
+    '3',
+    '4',
+    '5',
+    '6',
+    '7',
+    '8',
+    '9',
+    '5',
+    'a',
+    'b',
+    'c',
+    'd',
+    'e',
+    'f',
+  ]
   const color = new Array(6)
-    .fill("")
+    .fill('')
     .map(() => digits[Math.floor(Math.random() * digits.length)])
-    .join("");
-  return `#${color}`;
-};
+    .join('')
+  return `#${color}`
+}
 
 enum Result {
   Correct,
   Wrong,
 }
 const Guess = () => {
-  const { pathname } = useLocation();
-  console.log("hi");
-  console.log("path:", pathname);
-  const [correct, setCorrect] = useState("");
-  const [anwsers, setAnwsers] = useState<string[]>([]);
-  const [result, setResult] = useState<Result | undefined>(undefined);
+  const { pathname } = useLocation()
+  console.log('hi')
+  console.log('path:', pathname)
+  const [correct, setCorrect] = useState('')
+  const [anwsers, setAnwsers] = useState<string[]>([])
+  const [result, setResult] = useState<Result | undefined>(undefined)
 
   useEffect(() => {
-    createNewColors();
-  }, []);
+    createNewColors()
+  }, [])
 
   const createNewColors = () => {
-    let winner = generateColor();
-    setCorrect(winner);
+    let winner = generateColor()
+    setCorrect(winner)
     setAnwsers(
-      [winner, generateColor(), generateColor()].sort(
-        () => 0.5 - Math.random(),
-      ),
-    );
-  };
+      [winner, generateColor(), generateColor()].sort(() => 0.5 - Math.random())
+    )
+  }
 
   const handleButtonClick = (color: string) => {
-    console.log(color, correct);
+    console.log(color, correct)
     if (color == correct) {
-      setResult(Result.Correct);
-      createNewColors();
+      setResult(Result.Correct)
+      createNewColors()
     } else {
-      setResult(Result.Wrong);
+      setResult(Result.Wrong)
     }
-  };
+  }
 
   return (
     <div className="flex flex-col gap-6">
       <h1>Guess</h1>
-      <div style={{ display: "flex", margin: "0 auto" }}>
-        <div className="guess-me" style={{ background: correct }} />
+      <div className="mx-auto flex">
+        <div
+          className="h-[500px] w-[500px] flex-auto"
+          style={{ background: correct }}
+        />
       </div>
-      <div className="button-list">
+      <div className="flex justify-around">
         {anwsers.map((color) => (
           <button
             onClick={() => handleButtonClick(color)}
@@ -82,11 +83,13 @@ const Guess = () => {
         ))}
       </div>
       {result === Result.Correct && (
-        <div className="correct"> Correct Anwser</div>
+        <div className="text-base text-green-600"> Correct Anwser</div>
       )}
-      {result === Result.Wrong && <div className="wrong"> Wrong Anwser</div>}
-   </div>
-  );
-};
+      {result === Result.Wrong && (
+        <div className="text-base text-red-600"> Wrong Anwser</div>
+      )}
+    </div>
+  )
+}
 
-export default Guess;
+export default Guess

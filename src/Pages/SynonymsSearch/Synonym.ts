@@ -1,4 +1,4 @@
 export type Synonym = {
-  word: string;
-  score: number;
-};
+  word: string
+  score: number
+}
